@@ -140,6 +140,17 @@ Kohana::modules(array(
  */
 Cookie::$salt = 'anythingfornow';
 
+Route::set('rest', '<version>(/<directory>)/<controller>(.<format>)',
+    array(
+        'version' => 'v1',
+        'format'  => '(json)',
+    ))
+    ->defaults(array(
+        'format' => 'json',
+    ));
+
+
+
 /**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
@@ -147,5 +158,7 @@ Cookie::$salt = 'anythingfornow';
 Route::set('default', '(<controller>(/<action>(/<id>)))')
 	->defaults(array(
 		'controller' => 'welcome',
-		'action'     => 'index',
+		'action'     => 'signup',
 	));
+
+
