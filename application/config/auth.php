@@ -8,5 +8,5 @@ return array(
 	'lifetime'     => 1209600,
 	'session_type' => Session::$default,
 	'session_key'  => 'auth_user',
-
+	'users' => array(),
 );

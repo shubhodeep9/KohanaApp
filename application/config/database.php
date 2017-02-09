@@ -48,19 +48,19 @@ return array
 	 * MySQLi driver config example:
 	 *
 	 */
-// 	'alternate_mysqli' => array
-// 	(
-// 		'type'       => 'MySQLi',
-// 		'connection' => array(
-// 			'hostname'   => 'localhost',
-// 			'database'   => 'kohana',
-// 			'username'   => FALSE,
-// 			'password'   => FALSE,
-// 			'persistent' => FALSE,
-// 			'ssl'        => NULL,
-// 		),
-// 		'table_prefix' => '',
-// 		'charset'      => 'utf8',
-// 		'caching'      => FALSE,
-// 	),
+	'default' => array
+	(
+		'type'       => 'MySQLi',
+		'connection' => array(
+			'hostname'   => 'localhost',
+			'database'   => 'kohana',
+			'username'   => 'root',
+			'password'   => 'pass',
+			'persistent' => FALSE,
+			'ssl'        => NULL,
+		),
+		'table_prefix' => '',
+		'charset'      => 'utf8',
+		'caching'      => FALSE,
+	),
 );
